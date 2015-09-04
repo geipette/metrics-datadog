@@ -123,6 +123,9 @@ metrics:
         apiKey: <apiKey>
         connectTimeout: <duration>          # Optional. Default is 5 seconds
         socketTimeout: <duration>           # Optional. Default is 5 seconds
+        useSystemProxy: <true/false>        # Optional. Default false. Uses system property "http.proxyHost" and "http.ProxyPort"
+        proxyHost: <proxyHost>              # Optional. Only used when useSystemProxy is false
+        proxyPort: <proxyPort>              # Optional. Only used when useSystemProxy is false
 ~~~
 
 UDP Transport:
